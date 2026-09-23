@@ -24,10 +24,6 @@
 - **Maps:** osmdroid (OpenStreetMap) with Android's built-in Geocoder
 - **Architecture:** Activity-based navigation with Firestore snapshot listeners for live data
 
-## 📸 Screenshots
-
-*(Add screenshots of the Login, Home Feed, Post Donation, Map, and Profile screens here)*
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -57,7 +53,3 @@
 
 This project was built as an academic mobile application development project.
 
-## 👨‍💻 Authors
-
-- Praneeth Sai Raju K — 23BBTIT040
-- Arpan Pokharel — 23BBTIT061
