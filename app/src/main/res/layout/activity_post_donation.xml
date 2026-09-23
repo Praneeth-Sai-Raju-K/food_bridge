@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post a Donation"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/green_primary"
+        android:padding="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help surplus food reach someone who needs it"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:id="@+id/foodNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Food item (e.g. Bread &amp; Pastries)"
+                android:layout_marginBottom="4dp"
+                android:padding="16dp"
+                android:background="@drawable/rounded_input_bg" />
+
+            <TextView
+                android:id="@+id/foodNameError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#D32F2F"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/green_primary"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/catVegButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:text="Veg"
+                    android:textSize="11sp"
+                    android:backgroundTint="@color/green_primary"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/catNonVegButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="Non-Veg"
+                    android:textSize="11sp"
+                    android:backgroundTint="@color/green_light"
+                    android:textColor="@color/green_primary" />
+
+                <Button
+                    android:id="@+id/catBakeryButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="Bakery"
+                    android:textSize="11sp"
+                    android:backgroundTint="@color/green_light"
+                    android:textColor="@color/green_primary" />
+
+                <Button
+                    android:id="@+id/catCookedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:text="Cooked"
+                    android:textSize="11sp"
+                    android:backgroundTint="@color/green_light"
+                    android:textColor="@color/green_primary" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/quantityInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity (e.g. 10 kg, 20 boxes)"
+                android:layout_marginBottom="4dp"
+                android:padding="16dp"
+                android:background="@drawable/rounded_input_bg" />
+
+            <TextView
+                android:id="@+id/quantityError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#D32F2F"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/locationInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pickup location (e.g. MG Road Canteen)"
+                android:layout_marginBottom="4dp"
+                android:padding="16dp"
+                android:background="@drawable/rounded_input_bg" />
+
+            <TextView
+                android:id="@+id/locationError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#D32F2F"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/useCurrentLocationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📍 Use My Current Location"
+                android:backgroundTint="@color/green_light"
+                android:textColor="@color/green_primary"
+                android:textSize="13sp"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/expiryHoursInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Available for how many hours? (e.g. 4)"
+                android:inputType="number"
+                android:layout_marginBottom="16dp"
+                android:padding="16dp"
+                android:background="@drawable/rounded_input_bg" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <Button
+                    android:id="@+id/postButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Post Donation"
+                    android:background="@drawable/rounded_button_bg"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <ProgressBar
+                    android:id="@+id/postProgressBar"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:indeterminateTint="@color/white" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

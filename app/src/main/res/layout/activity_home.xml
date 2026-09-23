@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nearby Donations"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/green_primary"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/impactCounterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌱 0 donations shared by this community"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/green_primary"
+        android:background="@color/green_light"
+        android:padding="12dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/searchInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by food or location..."
+        android:padding="12dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_input_bg" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingStart="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/filterAllButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="All"
+                android:textSize="11sp"
+                android:backgroundTint="@color/green_primary"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/filterVegButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="Veg"
+                android:textSize="11sp"
+                android:backgroundTint="@color/green_light"
+                android:textColor="@color/green_primary" />
+
+            <Button
+                android:id="@+id/filterNonVegButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="Non-Veg"
+                android:textSize="11sp"
+                android:backgroundTint="@color/green_light"
+                android:textColor="@color/green_primary" />
+
+            <Button
+                android:id="@+id/filterBakeryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="Bakery"
+                android:textSize="11sp"
+                android:backgroundTint="@color/green_light"
+                android:textColor="@color/green_primary" />
+
+            <Button
+                android:id="@+id/filterCookedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooked"
+                android:textSize="11sp"
+                android:backgroundTint="@color/green_light"
+                android:textColor="@color/green_primary" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingBottom="4dp">
+
+        <Button
+            android:id="@+id/sortNewestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:text="Newest First"
+            android:textSize="11sp"
+            android:backgroundTint="@color/green_primary"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/sortExpiringButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiring Soonest"
+            android:textSize="11sp"
+            android:backgroundTint="@color/green_light"
+            android:textColor="@color/green_primary" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/donationListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/green_light"
+        android:dividerHeight="1dp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/postDonationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Post a Donation"
+        android:backgroundTint="@color/green_primary"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/green_light"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/navHomeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🏠 Home"
+            android:backgroundTint="@color/green_primary"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/navProfileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="👤 Profile"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/green_primary" />
+
+    </LinearLayout>
+
+</LinearLayout>

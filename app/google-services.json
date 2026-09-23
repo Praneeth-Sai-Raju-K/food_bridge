@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "107841794650",
+    "project_id": "food-bridge-ccb3a",
+    "storage_bucket": "food-bridge-ccb3a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107841794650:android:c10a30f08fa1bbcbde5e63",
+        "android_client_info": {
+          "package_name": "com.praneeth.foodbridge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1OHFP9iKOgaYUqNibTpJ1CUcmqWWUBig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

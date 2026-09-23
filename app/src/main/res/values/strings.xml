@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Food Bridge</string>
+    <string name="welcome_message">Welcome to Food Bridge 🌱</string>
+    <string name="login">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="tap_to_sign_up">New here? Tap to Sign Up</string>
+    <string name="already_have_account">Already have an account? Log In</string>
+    <string name="please_fill_fields">Please fill all fields</string>
+    <string name="login_successful">Login Successful</string>
+    <string name="login_failed">Login Failed: %1$s</string>
+    <string name="sign_up_successful">Sign Up Successful</string>
+    <string name="sign_up_failed">Sign Up Failed: %1$s</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_title">Food Bridge Login</string>
+</resources>
